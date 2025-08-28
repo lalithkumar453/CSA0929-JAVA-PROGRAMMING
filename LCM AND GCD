@@ -1,0 +1,17 @@
+public class R192421321{
+public static void main(String[] args){
+int a=3 , b=6;
+int gcd = findgcd(a,b);
+int lcm = (a*b)/gcd;
+System.out.println("GCD : "+gcd);
+System.out.println("LCM : "+lcm);
+}
+static int findgcd(int x, int y){
+while(y!=0){
+int temp=y;
+y=x%y;
+x=temp;
+}
+return x;
+}
+}
